@@ -87,7 +87,7 @@ public class IteratorOfCollect {
         maper.put("Science", 6766);
         maper.put("Science", 6767);  // key same but value different  - use the last value.
         maper.put("English", 4367);
-        maper.put("JIRA", 4367);   // key different but value same - create a new entry with new key
+        maper.put("JIRA", 4367);// key different but value same - create a new entry with new key.
         System.out.println(maper);
 
         System.out.println("-------------------------------------------------------");
@@ -109,6 +109,18 @@ public class IteratorOfCollect {
         System.out.println("-------------------------------------------------------");
 
         System.out.println(maper.values());
+
+        System.out.println("-------------------------------------------------------");
+
+        //tree map
+        TreeMap<Integer, String> student = new  TreeMap<>();
+        student.put(1, "Shubham");
+        student.put(2, "Tanmay");
+        System.out.println(student);
+        System.out.println("-------------------------------------------------------");
+        student.forEach((a,b) -> System.out.println(a +"=>"+ b));
+        System.out.println("-------------------------------------------------------");
+        System.out.println(student.reversed());
 
 
 
